@@ -1,0 +1,24 @@
+
+
+
+
+
+---------------------------------------------------------------
+Demo VM for BioNLP 2017 paper
+"Insights into Analogy Completion from the Biomedical Domain"
+---------------------------------------------------------------
+
+Welcome to the demo!  This will run 3 pre-trained sets of embeddings
+(one with word2vec CBOW, one with word2vec skip-gram, and one with
+Glove) through the BMASS analogy task.
+
+Before running the demo, please download the BMASS dataset from
+    http://slate.cse.ohio-state.edu/UTSAuthenticatedDownloader/index.html?dataset=BMASS
+
+The following commands will run the demo:
+    cd /vagrant/src
+    make demo
+
+
+
+

@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby
+
+Vagrant.configure(2) do |config|
+    config.vm.box = "ubuntu/xenial64"
+    config.vm.hostname = "BMASS"
+    config.vm.provision :shell, path: "setup.sh"
+    config.vm.define "BMASS"
+
+    config.vm.provision "file", source: "../analogy_task", destination: "/vagrant/src/analogy_task"
+    config.vm.provision "file", source: "../BMASS", destination: "/vagrant/src/BMASS"
+    config.vm.provision "file", source: "../lib", destination: "/vagrant/src/lib"
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 8192
+    end
+end

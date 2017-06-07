@@ -1,0 +1,11 @@
+To download the embeddings trained for this paper, go to
+    http://slate.cse.ohio-state.edu/BMASS/
+
+or run this Bash loop:
+    for f in PubMed_Glove.bin PubMed_Glove_vocab PubMed_CBOW.bin PubMed_SGNS.bin; do
+        wget http://slate.cse.ohio-state.edu/BMASS/$f
+    done
+
+
+To download the embeddings trained for Chiu et al. in BioNLP 2016, see their GitHub repo at
+    https://github.com/cambridgeltl/BioNLP-2016
